@@ -7,7 +7,7 @@
 
     <title>Ohmyfood</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -17,21 +17,22 @@
 
 <body>
     <div>
-       <header>
-            <img src="assets/images/logo/ohmyfood.png" alt="logo de ohmyfood">
+       <header class="header">
+            <img class="header__logo" src="assets/images/logo/ohmyfood.png" alt="logo de ohmyfood">
        </header>
        <main>
-            <section>
-                <div>
-                    <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
+            <section class="location">
+                <div class="location_zone">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Paris, Belleville</p>
                 </div>
-                <div>
-                    <h1>Réserver le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
-                    <button>Explorer nos restaurants</button>
+                <div class="explorer-restaurant">
+                    <h1 class="explorer-restaurant__title">Réserver le menu qui vous convient</h1>
+                    <p class="explorer-restaurant__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <button class="explorer-restaurant__btn">Explorer nos restaurants</button>
                 </div>
             </section>  
-            <section>
+            <section class="functioning">
                 <div>
                     <h2>Fonctionnement</h2>
                 </div>

@@ -1,0 +1,11 @@
+$color-main:#9356DC;
+$color-secondary: #FF79DA;
+$color-bg-grey: #F6F6F6;
+
+$main-gradient: linear-gradient($color-secondary, $color-main);
+
+$breakpoints: (
+    tablet: 768px,
+    desktop: 1024px,
+);
+
