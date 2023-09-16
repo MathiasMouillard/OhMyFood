@@ -1,0 +1,41 @@
+.footer {
+    background-color: #353535;
+    padding: 22px 25px;
+    &__content {
+        display: flex;
+        flex-direction: column;       
+    }
+    &__logo {
+        img {
+            width: 137px;
+            height: 27px;
+            filter: brightness(0) invert(1)
+        }
+    }
+    &__links {
+        margin-top: 16px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }    
+    &__item {
+        a {
+            display: flex;            
+            color: white;
+            align-items: center;
+        }
+    }
+    &__icon {
+        margin-right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        font-size: 0.9em;
+    }
+}

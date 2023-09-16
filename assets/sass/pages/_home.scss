@@ -24,6 +24,125 @@
             @include btn-order;
             width: 218px;
             height: 50px;
-            margin: 20px 0 50px 0 ;
-        }
+            margin: 20px 0 50px 0;
+            &:hover {
+                background-color: lighten($color-main, 10%);
+                background-blend-mode: lighten;
+                transition: background-color 0.8s;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+            }
+        }       
 }
+
+
+.functioning {
+    h2 {
+    margin: 48px 0 26px 20px;
+    }
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        gap: 24.92px;
+        margin-bottom: 68px;
+    }
+    &__cards {
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 20px;
+        margin: 0 20px 0 32.5px;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;        
+        &--number {
+            font-size: 24px;
+            margin-right: 10px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);	
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-main;
+            color: white;
+            border-radius: 50%;
+            font-size: 14px;
+        }       
+        &--icon {
+            margin-left: 34.47px;
+            color: #7E7E7E;
+        }
+        &--icolor {
+            color: $color-main;
+        }        
+        p {
+            margin: 28.59px 38px 28.12px 27px;
+        }     
+    }
+}
+
+.restaurant {
+    background: $color-bg-grey;
+    h2 {
+        padding: 54px 0px 45px 20px;
+    }
+}
+.restautant-cards {
+    padding-bottom: 50px;
+}
+
+.restaurant-card {
+    display: grid;
+    grid-template-columns: 1fr;    
+    position: relative;
+    margin: auto;
+    width: 92%;
+    padding-bottom: 18px;
+    &__image {
+        overflow: hidden;
+        width: 100%;
+        height: 160px;
+        border-radius: 25px 25px 0 0;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__new-label {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 15px;
+        right: 15px;
+        width: 80px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: $color-tertiaire;
+        color: #008766;        
+    }
+    &__info {
+        background-color: white;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+    }
+    &__details {
+        margin-left: 13px;
+        color: black;
+    }
+    &__favorite {
+        margin-right: 33px;
+        color: black;      
+    }
+}
+   
+    

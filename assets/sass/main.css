@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -14,6 +18,44 @@
   width: 200px;
   height: 30px;
   padding: 0px 19px 0px 16px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo img {
+  width: 137px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+}
+.footer__links {
+  margin-top: 16px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__item a {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.footer__icon {
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  font-size: 0.9em;
 }
 
 .location_zone {
@@ -50,4 +92,119 @@
   width: 218px;
   height: 50px;
   margin: 20px 0 50px 0;
+}
+.explorer-restaurant__btn:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  transition: background-color 0.8s;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.functioning h2 {
+  margin: 48px 0 26px 20px;
+}
+.functioning__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24.92px;
+  margin-bottom: 68px;
+}
+.functioning__cards {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  margin: 0 20px 0 32.5px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.functioning__cards--number {
+  font-size: 24px;
+  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.functioning__cards--icon {
+  margin-left: 34.47px;
+  color: #7E7E7E;
+}
+.functioning__cards--icolor {
+  color: #9356DC;
+}
+.functioning__cards p {
+  margin: 28.59px 38px 28.12px 27px;
+}
+
+.restaurant {
+  background: #F6F6F6;
+}
+.restaurant h2 {
+  padding: 54px 0px 45px 20px;
+}
+
+.restautant-cards {
+  padding-bottom: 50px;
+}
+
+.restaurant-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: auto;
+  width: 92%;
+  padding-bottom: 18px;
+}
+.restaurant-card__image {
+  overflow: hidden;
+  width: 100%;
+  height: 160px;
+  border-radius: 25px 25px 0 0;
+}
+.restaurant-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant-card__new-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #008766;
+}
+.restaurant-card__info {
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.restaurant-card__details {
+  margin-left: 13px;
+  color: black;
+}
+.restaurant-card__favorite {
+  margin-right: 33px;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
