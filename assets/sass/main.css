@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 a {
@@ -18,6 +24,11 @@ a {
   width: 200px;
   height: 30px;
   padding: 0px 19px 0px 16px;
+}
+
+.restaurant-card__favorite-button {
+  border: none;
+  background: none;
 }
 
 .footer {
@@ -80,6 +91,8 @@ a {
 }
 .explorer-restaurant__text {
   padding: 0 34px 0 26px;
+  font-size: 1.125em;
+  font-weight: 300;
 }
 .explorer-restaurant__btn {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -139,6 +152,7 @@ a {
 .functioning__cards--icon {
   margin-left: 34.47px;
   color: #7E7E7E;
+  font-size: 1.2em;
 }
 .functioning__cards--icolor {
   color: #9356DC;
@@ -151,7 +165,7 @@ a {
   background: #F6F6F6;
 }
 .restaurant h2 {
-  padding: 54px 0px 45px 20px;
+  padding: 54px 0px 20px 20px;
 }
 
 .restautant-cards {
@@ -189,6 +203,7 @@ a {
   border-radius: 2px;
   background-color: #99E2D0;
   color: #008766;
+  font-size: 0.875em;
 }
 .restaurant-card__info {
   background-color: white;
@@ -204,7 +219,17 @@ a {
   margin-left: 13px;
   color: black;
 }
-.restaurant-card__favorite {
+.restaurant-card__details h3 {
+  font-size: 1.125em;
+}
+.restaurant-card__details p {
+  font-size: 1.0625em;
+  font-weight: 300;
+}
+.restaurant-card__favorite-button {
   margin-right: 33px;
   color: black;
+}
+.restaurant-card__new-icon {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,15 @@ $color-white: #FFF;
 
 $main-gradient: linear-gradient($color-secondary, $color-main);
 
+$font-size-small: 0.875em; // 14px
+$font-size-medium-plus: 1.0625em; // 17px
+$font-size-large: 1.125em; // 18px
+$font-size-extra-large: 1.5em; // 24px
+$font-size-extra-extra-large: 1.75em; // 28px
+
+$font-weight-light: 300;
+$font-weight-bold: 700;
+
 $breakpoints: (
     tablet: 768px,
     desktop: 1024px,

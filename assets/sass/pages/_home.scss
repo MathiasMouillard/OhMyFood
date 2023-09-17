@@ -19,6 +19,8 @@
         }
         &__text {
             padding: 0 34px 0 26px;
+            font-size: $font-size-large;
+            font-weight: $font-weight-light;
         }
         &__btn {
             @include btn-order;
@@ -74,6 +76,7 @@
         &--icon {
             margin-left: 34.47px;
             color: #7E7E7E;
+            font-size: 1.2em;
         }
         &--icolor {
             color: $color-main;
@@ -87,7 +90,7 @@
 .restaurant {
     background: $color-bg-grey;
     h2 {
-        padding: 54px 0px 45px 20px;
+        padding: 54px 0px 20px 20px;
     }
 }
 .restautant-cards {
@@ -123,7 +126,8 @@
         height: 29px;
         border-radius: 2px;
         background-color: $color-tertiaire;
-        color: #008766;        
+        color: #008766;
+        font-size: $font-size-small;
     }
     &__info {
         background-color: white;
@@ -138,11 +142,20 @@
     &__details {
         margin-left: 13px;
         color: black;
+        h3 {
+            font-size: $font-size-large;
+        }
+        p {
+            font-size: $font-size-medium-plus;
+            font-weight: $font-weight-light;
+        }
     }
-    &__favorite {
+    &__favorite-button {
         margin-right: 33px;
-        color: black;      
+        color: black;
     }
-}
-   
+    &__new-icon {
+        display: none;
+    }      
     
+}
