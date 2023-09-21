@@ -1,11 +1,15 @@
 .header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 14px 89px 13px 89px;
-        &__logo {
+    justify-content: center;
+    padding: 14px 0 13px 0;
+        &__logo {                       
             width: 200px;
             height: 30px;   
             padding: 0px 19px 0px 16px;                             
-        }   
+        }
+        &__nav {
+            position: absolute;
+            left: 17px;
+        }
 }

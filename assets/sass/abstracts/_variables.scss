@@ -1,12 +1,14 @@
 $color-main:#9356DC;
 $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0;
-$color-bg-grey: #F6F6F6;
 $color-white: #FFF;
+$color-bg-grey: #F6F6F6;
+
 
 $main-gradient: linear-gradient($color-secondary, $color-main);
 
 $font-size-small: 0.875em; // 14px
+$font-size-small-plus: 0.9375em; // 15px
 $font-size-medium-plus: 1.0625em; // 17px
 $font-size-large: 1.125em; // 18px
 $font-size-extra-large: 1.5em; // 24px

@@ -1,0 +1,98 @@
+.main {
+    background: $color-bg-grey;
+}
+.banner img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+}
+
+.restaurant {
+    position: relative;
+    border-radius: 40px 40px 0px 0px;
+    top: -49px;
+    background-color: $color-bg-grey;
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0;
+        & h1 {
+            font-family: "Shrikhand", sans-serif;
+            font-size: $font-size-extra-extra-large;
+        }       
+    }
+    &__favorite-button {
+        @include btn-heart;
+        padding: 0 24px;
+    }
+    &__menu {
+        padding: 0 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &-title {
+            height: 27px;             
+            h2 {
+                position: relative;
+                font-size: 1em;
+                font-weight: $font-weight-light;
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $color-tertiaire;
+                    width: 40px;
+                    height: 3px;
+                    position: relative;
+                    top: 5px; 
+                    left: 0;
+                }
+            }        
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        height: 72px;
+        border-radius: 15px;
+        padding: 15px;
+        background: $color-white;
+        @include shadowlight;     
+        & h3 {
+            font-size: $font-size-large;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        & p {
+            font-size: $font-size-small-plus;
+            font-weight: $font-weight-light;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }   
+    }
+    &__item-price {
+        display: flex;
+        align-items: flex-end;
+        font-size: $font-size-small-plus;
+    }
+    &__order {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        &-button {           
+            @include btn-order;
+            width: 186px;
+            &:hover {
+                @include btn-hover;
+            }    
+        }
+    }   
+}

@@ -8,7 +8,7 @@
     gap: 17px;
 }
 
-.explorer-restaurant {
+.explorer-restaurants{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -25,13 +25,10 @@
         &__btn {
             @include btn-order;
             width: 218px;
-            height: 50px;
             margin: 20px 0 50px 0;
             &:hover {
-                background-color: lighten($color-main, 10%);
-                background-blend-mode: lighten;
-                transition: background-color 0.8s;
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+                @include btn-hover;
+                @include shadowbtn;
             }
         }       
 }
@@ -54,7 +51,7 @@
         border-radius: 20px;
         margin: 0 20px 0 32.5px;
         background-color: #F6F6F6;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        @include shadowlight;
         position: relative;        
         &--number {
             font-size: 24px;
@@ -87,17 +84,17 @@
     }
 }
 
-.restaurant {
+.restaurants {
     background: $color-bg-grey;
     h2 {
         padding: 54px 0px 20px 20px;
     }
 }
-.restautant-cards {
+.restaurants-cards {
     padding-bottom: 50px;
 }
 
-.restaurant-card {
+.restaurants-card {
     display: grid;
     grid-template-columns: 1fr;    
     position: relative;
@@ -132,7 +129,7 @@
     &__info {
         background-color: white;
         border-radius: 0 0 25px 25px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        @include shadowlight;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -151,8 +148,9 @@
         }
     }
     &__favorite-button {
+        @include btn-heart;
         margin-right: 33px;
-        color: black;
+        color: black;   
     }
     &__new-icon {
         display: none;
