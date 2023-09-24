@@ -11,5 +11,9 @@
         &__nav {
             position: absolute;
             left: 17px;
+           & i {
+            color: black;
+            font-size: 25px;
+            }
         }
 }

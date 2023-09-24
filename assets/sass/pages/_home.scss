@@ -4,8 +4,9 @@
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #e7e7e7;
     gap: 17px;
+    background-color: #e7e7e7;      
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .explorer-restaurants{
@@ -27,8 +28,7 @@
             width: 218px;
             margin: 20px 0 50px 0;
             &:hover {
-                @include btn-hover;
-                @include shadowbtn;
+                @include btn-hover;                
             }
         }       
 }
@@ -149,11 +149,16 @@
     }
     &__favorite-button {
         @include btn-heart;
-        margin-right: 33px;
-        color: black;   
-    }
-    &__new-icon {
-        display: none;
-    }      
-    
+        margin: 33px;
+        position: relative;
+        cursor: pointer;
+        &--heart {
+            @include heart-empty;
+        }
+        &--new-icon {
+            @include heart-filled;
+        }        
+    }    
 }
+
+
