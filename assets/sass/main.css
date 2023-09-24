@@ -255,9 +255,6 @@ a {
   transition: opacity 0.3s ease-in-out;
   padding: 0 24px 0 0;
 }
-.restaurants-card__favorite-button--heart:hover {
-  opacity: 0;
-}
 .restaurants-card__favorite-button--new-icon {
   position: absolute;
   top: 0;
@@ -313,9 +310,6 @@ a {
   transition: opacity 0.3s ease-in-out;
   padding: 0 24px 0 0;
 }
-.restaurant__favorite-button--heart:hover {
-  opacity: 0;
-}
 .restaurant__favorite-button--new-icon {
   position: absolute;
   top: 0;
@@ -363,30 +357,39 @@ a {
   left: 0;
 }
 .restaurant__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  height: 72px;
-  padding: 15px;
+  height: 69px;
   background: #FFF;
   border: none;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+}
+.restaurant__item:hover .restaurant__add-selection {
+  margin-right: 0px;
 }
 .restaurant__item-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  margin: 0 0 0 15px;
   gap: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .restaurant__item-info h3 {
+  padding: 15px 0 0 0;
   font-size: 1.125em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .restaurant__item-info p {
+  padding: 0 15px 0 0;
   font-size: 0.9375em;
   font-weight: 300;
   overflow: hidden;
@@ -397,6 +400,20 @@ a {
   display: flex;
   align-items: flex-end;
   font-size: 0.9375em;
+  margin: 15px;
+}
+.restaurant__add-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #99E2D0;
+  width: 60px;
+  margin-right: -60px;
+  border-radius: 0px 15px 15px 0px;
+  transition: all 0.5s;
+  color: white;
+  font-size: 25px;
 }
 .restaurant__order {
   display: flex;
