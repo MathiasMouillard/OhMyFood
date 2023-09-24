@@ -148,9 +148,10 @@
         }
     }
     &__favorite-button {
-        @include btn-heart;
-        margin: 33px;
-        position: relative;
+        @include btn-heart;      
+        position: absolute;
+        top: 71%;
+        left: 85%;
         cursor: pointer;
         &--heart {
             @include heart-empty;

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Shrikhand&display=swap");
+@keyframes appearFromBottom {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -238,12 +246,14 @@ a {
 .restaurants-card__favorite-button {
   border: none;
   background: none;
-  margin: 33px;
-  position: relative;
+  position: absolute;
+  top: 71%;
+  left: 85%;
   cursor: pointer;
 }
 .restaurants-card__favorite-button--heart {
   transition: opacity 0.3s ease-in-out;
+  padding: 0 24px 0 0;
 }
 .restaurants-card__favorite-button--heart:hover {
   opacity: 0;
@@ -253,15 +263,17 @@ a {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 2s ease-in-out;
-  color: #99E2D0;
+  transition: opacity 0.3s linear, transform 2s linear;
+  padding: 0 24px 0 0;
 }
 .restaurants-card__favorite-button--new-icon:hover {
   opacity: 1;
   top: 0;
-}
-.restaurants-card__favorite-button--new-icon:active {
-  opacity: 1;
+  animation: appearFromBottom 0.5s linear;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main {
@@ -284,6 +296,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 32px 0 40px 0;
+  gap: 24px;
 }
 .restaurant__info h1 {
   font-family: "Shrikhand", sans-serif;
@@ -292,11 +306,12 @@ a {
 .restaurant__favorite-button {
   border: none;
   background: none;
-  padding: 0 24px;
+  position: relative;
   cursor: pointer;
 }
 .restaurant__favorite-button--heart {
   transition: opacity 0.3s ease-in-out;
+  padding: 0 24px 0 0;
 }
 .restaurant__favorite-button--heart:hover {
   opacity: 0;
@@ -306,15 +321,17 @@ a {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 2s ease-in-out;
-  color: #99E2D0;
+  transition: opacity 0.3s linear, transform 2s linear;
+  padding: 0 24px 0 0;
 }
 .restaurant__favorite-button--new-icon:hover {
   opacity: 1;
   top: 0;
-}
-.restaurant__favorite-button--new-icon:active {
-  opacity: 1;
+  animation: appearFromBottom 0.5s linear;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant__menu {
   padding: 0 13px;

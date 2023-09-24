@@ -34,6 +34,7 @@
 
 @mixin heart-empty {
   transition: opacity 0.3s ease-in-out;
+  padding: 0 24px 0 0;
   &:hover {
       opacity: 0;
   } 
@@ -43,14 +44,16 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 2s ease-in-out;
-  color: $color-tertiaire;
+  transition: opacity 0.3s linear, transform 2s linear;
+  padding: 0 24px 0 0;
   &:hover {
       opacity: 1;
       top: 0;
-  }
-  &:active {
-    opacity: 1; // L'élément reste visible lorsque cliqué
+      animation: appearFromBottom 0.5s linear;
+      background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+	    background-clip: text;
+      -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
   }
 }
 
