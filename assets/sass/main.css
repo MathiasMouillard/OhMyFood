@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Shrikhand&display=swap");
+@keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  }
+}
+.fade-in {
+  transform-origin: top;
+  animation: fade-in 2s forwards;
+}
+.fade-in--second {
+  animation: fade-in 2s 500ms both;
+}
+.fade-in--third {
+  animation: fade-in 2s 1000ms both;
+}
+
 @keyframes appearFromBottom {
   0% {
     transform: scaleY(0);
@@ -40,11 +67,6 @@ a {
 .header__nav i {
   color: black;
   font-size: 25px;
-}
-
-.restaurant-card__favorite-button {
-  border: none;
-  background: none;
 }
 
 .footer {
@@ -120,14 +142,14 @@ a {
   color: #FFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-weight: bold;
+  transition: background-color 0.7s, box-shadow 0.7s;
   width: 218px;
   margin: 20px 0 50px 0;
 }
 .explorer-restaurants__btn:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  transition: background-color 0.9s;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
 }
 
 .functioning h2 {
@@ -196,6 +218,10 @@ a {
   margin: auto;
   width: 92%;
   padding-bottom: 18px;
+  transition: transform 0.2s;
+}
+.restaurants-card:hover {
+  transform: scale(1.01);
 }
 .restaurants-card__image {
   overflow: hidden;
@@ -253,20 +279,18 @@ a {
 }
 .restaurants-card__favorite-button--heart {
   transition: opacity 0.3s ease-in-out;
-  padding: 0 24px 0 0;
 }
 .restaurants-card__favorite-button--new-icon {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s linear, transform 2s linear;
-  padding: 0 24px 0 0;
+  transition: opacity 0.3s linear, transform 0.3s linear;
 }
 .restaurants-card__favorite-button--new-icon:hover {
   opacity: 1;
   top: 0;
-  animation: appearFromBottom 0.5s linear;
+  animation: appearFromBottom 0.3s linear;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-clip: text;
   -webkit-background-clip: text;
@@ -308,20 +332,18 @@ a {
 }
 .restaurant__favorite-button--heart {
   transition: opacity 0.3s ease-in-out;
-  padding: 0 24px 0 0;
 }
 .restaurant__favorite-button--new-icon {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s linear, transform 2s linear;
-  padding: 0 24px 0 0;
+  transition: opacity 0.3s linear, transform 0.3s linear;
 }
 .restaurant__favorite-button--new-icon:hover {
   opacity: 1;
   top: 0;
-  animation: appearFromBottom 0.5s linear;
+  animation: appearFromBottom 0.3s linear;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-clip: text;
   -webkit-background-clip: text;
@@ -419,6 +441,7 @@ a {
   display: flex;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
 }
 .restaurant__order-button {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -429,11 +452,11 @@ a {
   color: #FFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-weight: bold;
+  transition: background-color 0.7s, box-shadow 0.7s;
   width: 186px;
 }
 .restaurant__order-button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  transition: background-color 0.9s;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
 }/*# sourceMappingURL=main.css.map */

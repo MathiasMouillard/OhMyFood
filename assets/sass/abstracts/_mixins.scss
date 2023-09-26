@@ -2,7 +2,7 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15)
 }
 @mixin shadowbtn {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
 }
 
 @mixin btn-order {
@@ -14,33 +14,32 @@
     color: $color-white;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     font-weight: bold;
+    transition: background-color 0.7s, box-shadow 0.7s;
   }
 @mixin btn-hover {
   background-color: lighten($color-main, 10%);
   background-blend-mode: lighten;
   @include shadowbtn;
-  transition: background-color 0.9s;
-} 
+  
+}
+
 @mixin btn-heart {
   border: none;
   background: none;
   }
-
 @mixin heart-empty {
-  transition: opacity 0.3s ease-in-out;
-  padding: 0 24px 0 0;
+  transition: opacity 0.3s ease-in-out;  
 }
 @mixin heart-filled {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s linear, transform 2s linear;
-  padding: 0 24px 0 0;
+  transition: opacity 0.3s linear, transform 0.3s linear;  
   &:hover {
       opacity: 1;
       top: 0;
-      animation: appearFromBottom 0.5s linear;
+      animation: appearFromBottom 0.3s linear;
       background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 	    background-clip: text;
       -webkit-background-clip: text;
