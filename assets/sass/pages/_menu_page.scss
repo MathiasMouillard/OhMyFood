@@ -35,7 +35,7 @@
         }
     }
     &__menu {
-        padding: 0 13px;
+        padding: 0 10px;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -90,7 +90,7 @@
             @include truncate-text;
             }
             & p {
-            padding: 0 15px 0 0;
+            padding: 0 0 15px 0;
             font-size: $font-size-small-plus;
             font-weight: $font-weight-light;
             @include truncate-text;
@@ -101,7 +101,7 @@
         display: flex;
         align-items: flex-end;
         font-size: $font-size-small-plus;
-        margin: 15px;
+        margin: 0 15px 12px 0;
     }
     &__add-selection {
         display: flex;

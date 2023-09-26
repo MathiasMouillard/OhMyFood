@@ -1,9 +1,16 @@
 .footer {
     background-color: #353535;
     padding: 22px 25px;
+    @media screen and (min-width: map-get($breakpoints, desktop)) { 
+        padding: 30px 25px;
+    }           
     &__content {
         display: flex;
-        flex-direction: column;       
+        flex-direction: column;
+        gap: 16px;
+        @media screen and (min-width: map-get($breakpoints, desktop)) { 
+            flex-direction: row-reverse; 
+        }           
     }
     &__logo {
         img {
@@ -13,7 +20,10 @@
         }
     }
     &__links {
-        margin-top: 16px;
+        display: flex;
+        @media screen and (min-width: map-get($breakpoints, desktop)) { 
+            align-items: center;
+        } 
     }
     &__list {
         list-style: none;
@@ -21,12 +31,25 @@
         display: flex;
         flex-direction: column;
         gap: 7px;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            flex-direction: row;
+            gap: 15px;
+        } 
     }    
     &__item {
         a {
             display: flex;            
             color: white;
             align-items: center;
+        }
+        &:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            &:nth-child(3) {
+                margin-left: 20px; /* Ajoutez la marge souhaitée entre "Devenir partenaire" et "Mentions légales" */
+            }
         }
     }
     &__icon {
