@@ -12,12 +12,10 @@
             flex-direction: row-reverse; 
         }           
     }
-    &__logo {
-        img {
-            width: 137px;
-            height: 27px;
-            filter: brightness(0) invert(1)
-        }
+    &__logo img {        
+        width: 137px;
+        height: 27px;
+        filter: brightness(0) invert(1)        
     }
     &__links {
         display: flex;
@@ -48,7 +46,7 @@
         }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             &:nth-child(3) {
-                margin-left: 20px; /* Ajoutez la marge souhaitée entre "Devenir partenaire" et "Mentions légales" */
+                margin-left: 20px;
             }
         }
     }
