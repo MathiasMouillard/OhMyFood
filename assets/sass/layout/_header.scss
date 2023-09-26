@@ -11,9 +11,13 @@
         &__nav {
             position: absolute;
             left: 17px;
-           & i {
-            color: black;
-            font-size: 25px;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.2);
             }
+            & i {
+                color: black;
+                font-size: 25px;
+            }           
         }
 }
