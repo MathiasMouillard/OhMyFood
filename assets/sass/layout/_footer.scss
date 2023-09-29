@@ -1,15 +1,19 @@
 .footer {
     background-color: #353535;
     padding: 22px 25px;
-    @media screen and (min-width: map-get($breakpoints, desktop)) { 
+    @media screen and (min-width: map-get($breakpoints, desktop)) {        
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         padding: 30px 25px;
+        height: 114px;       
     }           
     &__content {
         display: flex;
         flex-direction: column;
         gap: 16px;
         @media screen and (min-width: map-get($breakpoints, desktop)) { 
-            flex-direction: row-reverse; 
+            flex-direction: row-reverse;
         }           
     }
     &__logo img {        
@@ -46,7 +50,7 @@
         }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             &:nth-child(3) {
-                margin-left: 20px;
+            margin-left: 20px;
             }
         }
     }

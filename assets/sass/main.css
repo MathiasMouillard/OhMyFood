@@ -55,11 +55,6 @@ a {
   justify-content: center;
   padding: 14px 0 13px 0;
 }
-@media screen and (min-width: 1024px) {
-  .header {
-    padding: 30px 0 32px 0;
-  }
-}
 .header__logo {
   width: 200px;
   height: 30px;
@@ -77,6 +72,11 @@ a {
   color: black;
   font-size: 25px;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 30px 0 32px 0;
+  }
+}
 
 .footer {
   background-color: #353535;
@@ -84,7 +84,11 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     padding: 30px 25px;
+    height: 114px;
   }
 }
 .footer__content {
@@ -168,6 +172,11 @@ a {
 .explorer-restaurants__title {
   padding: 30px 58px 10px 42px;
 }
+@media screen and (min-width: 1024px) {
+  .explorer-restaurants__title {
+    font-size: 2.5em;
+  }
+}
 .explorer-restaurants__text {
   padding: 0 34px 0 26px;
   font-size: 1.125em;
@@ -186,14 +195,34 @@ a {
   width: 218px;
   margin: 20px 0 50px 0;
 }
+@media screen and (min-width: 1024px) {
+  .explorer-restaurants__btn {
+    margin: 18px 0 30px 0;
+  }
+}
 .explorer-restaurants__btn:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
 }
 
+.functioning {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .functioning {
+    margin: 50px auto;
+  }
+}
 .functioning h2 {
-  margin: 48px 0 26px 20px;
+  margin: 48px 0 26px 0;
+}
+@media screen and (min-width: 1024px) {
+  .functioning h2 {
+    margin-bottom: 25px;
+  }
 }
 .functioning__steps {
   display: flex;
@@ -201,15 +230,28 @@ a {
   gap: 24.92px;
   margin-bottom: 68px;
 }
+@media screen and (min-width: 1024px) {
+  .functioning__steps {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    gap: 36.5px;
+  }
+}
 .functioning__cards {
   display: flex;
   align-items: center;
   border: none;
   border-radius: 20px;
-  margin: 0 20px 0 32.5px;
+  margin-left: 12.5px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .functioning__cards {
+    margin: 0;
+  }
 }
 .functioning__cards--number {
   font-size: 24px;
@@ -244,20 +286,36 @@ a {
   background: #F6F6F6;
 }
 .restaurants h2 {
-  padding: 54px 0px 20px 20px;
+  padding: 50px 0 20px 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h2 {
+    padding: 30px 0 20px 20px;
+  }
 }
 
 .restaurants-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
   padding-bottom: 50px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 40px;
+    padding-bottom: 7px;
+  }
 }
 
 .restaurants-card {
-  display: grid;
-  grid-template-columns: 1fr;
   position: relative;
   margin: auto;
   width: 92%;
-  padding-bottom: 18px;
   transition: transform 0.2s;
 }
 .restaurants-card:hover {
@@ -312,9 +370,9 @@ a {
 .restaurants-card__favorite-button {
   border: none;
   background: none;
-  position: absolute;
-  top: 71%;
-  left: 85%;
+  position: relative;
+  bottom: 55px;
+  left: 86%;
   cursor: pointer;
 }
 .restaurants-card__favorite-button--heart {
@@ -337,10 +395,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.main {
-  background: #F6F6F6;
-}
-
 .banner img {
   width: 100%;
   height: 275px;
@@ -348,10 +402,10 @@ a {
 }
 
 .restaurant {
+  max-width: 1055px;
+  margin: 0 auto;
   position: relative;
-  border-radius: 40px 40px 0px 0px;
-  top: -49px;
-  background-color: #F6F6F6;
+  margin: -49px auto 0 auto;
 }
 .restaurant__info {
   display: flex;
@@ -359,6 +413,8 @@ a {
   justify-content: center;
   padding: 32px 0 40px 0;
   gap: 24px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #F6F6F6;
 }
 .restaurant__info h1 {
   font-family: "Shrikhand", sans-serif;
@@ -393,9 +449,13 @@ a {
   padding: 0 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
+  background: #F6F6F6;
 }
 .restaurant__category {
+  max-width: 634px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -481,6 +541,7 @@ a {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 .restaurant__order-button {

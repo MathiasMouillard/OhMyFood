@@ -17,6 +17,9 @@
     background: $color-bg-grey;
         &__title {
             padding: 30px 58px 10px 42px;
+            @media screen and (min-width: map-get($breakpoints, desktop)) {
+                font-size: 2.5em;
+            }
         }
         &__text {
             padding: 0 34px 0 26px;
@@ -27,6 +30,9 @@
             @include btn-order;
             width: 218px;
             margin: 20px 0 50px 0;
+            @media screen and (min-width: map-get($breakpoints, desktop)) {
+                margin: 18px 0 30px 0;
+            }            
             &:hover {
                 @include btn-hover;                               
             }            
@@ -34,25 +40,42 @@
 }
 
 
-.functioning {
+.functioning {  
+    @include center-max-width-desktop;
+    padding: 0 20px;  
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        margin: 50px auto;
+    }
     h2 {
-    margin: 48px 0 26px 20px;
+    margin: 48px 0 26px 0;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        margin-bottom: 25px;
+    }
     }
     &__steps {
         display: flex;
         flex-direction: column;
         gap: 24.92px;
         margin-bottom: 68px;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 50px;
+            gap: 36.5px;
+        }
     }
     &__cards {
         display: flex;
         align-items: center;
         border: none;
         border-radius: 20px;
-        margin: 0 20px 0 32.5px;
+        margin-left: 12.5px;
         background-color: #F6F6F6;
         @include shadowlight;
-        position: relative;        
+        position: relative;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            margin: 0;            
+        }       
         &--number {
             font-size: 24px;
             margin-right: 10px;
@@ -87,20 +110,30 @@
 .restaurants {
     background: $color-bg-grey;
     h2 {
-        padding: 54px 0px 20px 20px;
-    }
+        padding: 50px 0 20px 20px;
+        @include center-max-width-desktop;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            padding: 30px 0 20px 20px;
+        } 
+     }
 }
-.restaurants-cards {
+.restaurants-cards {    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
     padding-bottom: 50px;
+    @include center-max-width-desktop;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        grid-template-columns: 1fr 1fr;
+        gap: 23px 40px;
+        padding-bottom: 7px;
+    }  
 }
 
-.restaurants-card {
-    display: grid;
-    grid-template-columns: 1fr;    
+.restaurants-card {   
     position: relative;
     margin: auto;
     width: 92%;
-    padding-bottom: 18px;
     transition: transform 0.2s;
         &:hover {
             transform: scale(1.01);
@@ -153,9 +186,9 @@
     }
     &__favorite-button {
         @include btn-heart;      
-        position: absolute;
-        top: 71%;
-        left: 85%;
+        position: relative;
+        bottom: 55px;
+        left: 86%;
         cursor: pointer;
         &--heart {
             @include heart-empty;
