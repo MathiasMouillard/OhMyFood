@@ -1,28 +1,28 @@
 .footer {
     background-color: #353535;
-    padding: 22px 25px;
+    padding: 1.375rem 1.5625rem;
     @media screen and (min-width: map-get($breakpoints, desktop)) {        
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        padding: 30px 25px;
-        height: 114px;       
+        padding: 1.875rem 1.5625rem;
+        height: 7.125rem;       
     }           
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
         @media screen and (min-width: map-get($breakpoints, desktop)) { 
             flex-direction: row-reverse;
         }           
     }
     &__logo {
-        width: 137px;
-        height: 27px;
+        width: 8.5625rem;
+        height: 1.6875rem;
         & img {        
-        width: 105px;
-        height: 22px;
-        filter: brightness(0) invert(1)        
+            width: 6.5625rem;
+            height: 1.375rem;
+            filter: brightness(0) invert(1);        
         }
     }
     &__links {
@@ -36,15 +36,15 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 7px;
+        gap: 0.4375rem;
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             flex-direction: row;
-            gap: 15px;
+            gap: 0.9375rem;
         } 
     }    
     &__item {
         &:nth-child(4) {
-            width: 130px;
+            width: 8.125rem;
         }
         a {
             display: flex;            
@@ -57,17 +57,17 @@
         }
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             &:nth-child(3) {
-            margin-left: 20px;
+                margin-left: 1.25rem;
             }
         }
     }
     &__icon {
-        margin-right: 12px;
+        margin-right: 0.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10px;
-        height: 10px;
+        width: 0.625rem;
+        height: 0.625rem;
         font-size: 0.9em;
     }
 }

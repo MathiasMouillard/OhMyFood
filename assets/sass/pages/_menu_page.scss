@@ -1,21 +1,21 @@
 .banner img {
-        width: 100%;
-        height: 275px;
-        object-fit: cover;
+    width: 100%;
+    height: 17.5rem;
+    object-fit: cover;
 }
 
 .restaurant {
     max-width: 1055px;
     margin: 0 auto;
     position: relative;
-    margin: -49px auto 0 auto;    
+    margin: -3.0625rem auto 0 auto;    
     &__info {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 32px 0 40px 0;
-        gap: 24px;
-        border-radius: 40px 40px 0px 0px;
+        padding: 2rem 0 2.5rem 0;
+        gap: 1.5rem;
+        border-radius: 2.5rem 2.5rem 0 0;
         background-color: $color-bg-grey;
         & h1 {
             font-family: "Shrikhand", sans-serif;
@@ -34,11 +34,11 @@
         }
     }
     &__menu {
-        padding: 0 10px;
+        padding: 0 0.625rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 2.5rem;
         background: $color-bg-grey;
     }
     &__category {
@@ -46,9 +46,9 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 0.75rem;
         &-title {
-            height: 27px;             
+            height: 1.6875rem;             
             h2 {
                 position: relative;
                 font-size: 1em;
@@ -57,10 +57,10 @@
                     content: "";
                     display: block;
                     background-color: $color-tertiaire;
-                    width: 40px;
-                    height: 3px;
+                    width: 2.5rem;
+                    height: 0.1875rem;
                     position: relative;
-                    top: 5px; 
+                    top: 0.3125rem; 
                     left: 0;
                 }
             }        
@@ -70,41 +70,41 @@
         position: relative;
         display: flex;
         justify-content: space-between;        
-        height: 69px;
+        height: 4.3125rem;
         background: $color-white;
         border: none;
-        border-radius: 15px;               
+        border-radius: 0.9375rem;               
         @include shadowlight;
         overflow: hidden;
         cursor: pointer; 
         &:hover .restaurant__add-selection {
-            margin-right: 0px;
+            margin-right: 0;
         }
         &-info {
             display: flex;
             flex-direction: column;
             flex: 1;
-            margin: 0 0 0 15px;
-            gap: 5px;
+            margin: 0 0 0 0.9375rem;
+            gap: 0.3125rem;
             @include truncate-text;
             & h3 {
-            padding: 15px 0 0 0;
-            font-size: $font-size-large;
-            @include truncate-text;
+                padding: 0.9375rem 0 0 0;
+                font-size: $font-size-large;
+                @include truncate-text;
             }
             & p {
-            padding: 0 0 15px 0;
-            font-size: $font-size-small-plus;
-            font-weight: $font-weight-light;
-            @include truncate-text;
+                padding: 0 0 0.9375rem 0;
+                font-size: $font-size-small-plus;
+                font-weight: $font-weight-light;
+                @include truncate-text;
             }      
         }
     }
     &__item-price {
         display: flex;
         align-items: flex-end;
-        font-size: $font-size-small-plus;
-        margin: 0 15px 12px 0;
+        font-size: $font-size-large;
+        margin: 0 0.9375rem 0.75rem 0;
     }
     &__add-selection {
         display: flex;
@@ -112,22 +112,22 @@
         justify-content: center;
         height: auto;
         background-color: $color-tertiaire;
-        width: 60px;
-        margin-right: -60px;
-        border-radius: 0px 15px 15px 0px;
+        width: 3.75rem;
+        margin-right: -3.75rem;
+        border-radius: 0 0.9375rem 0.9375rem 0;
         transition: all 0.5s;
         color: white;
-        font-size: 25px;      
+        font-size: 2.5rem;      
     }
     &__order {
         display: flex;
         text-align: center;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         cursor: pointer;
         &-button {           
             @include btn-order;
-            width: 186px;
+            width: 11.625rem;
             &:hover {
                 @include btn-hover;
             }    
