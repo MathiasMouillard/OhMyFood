@@ -16,10 +16,14 @@
             flex-direction: row-reverse;
         }           
     }
-    &__logo img {        
+    &__logo {
         width: 137px;
         height: 27px;
+        & img {        
+        width: 105px;
+        height: 22px;
         filter: brightness(0) invert(1)        
+        }
     }
     &__links {
         display: flex;
@@ -39,6 +43,9 @@
         } 
     }    
     &__item {
+        &:nth-child(4) {
+            width: 130px;
+        }
         a {
             display: flex;            
             color: white;
