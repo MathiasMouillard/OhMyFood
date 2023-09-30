@@ -580,12 +580,11 @@ a {
   text-overflow: ellipsis;
 }
 .restaurant__item-info h3 {
-  padding: 0.9375rem 0 0 0;
+  padding: 0.9375rem 0 0.3125rem 0;
   font-size: 1.125rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-bottom: 0.3125rem;
 }
 .restaurant__item-info p {
   padding: 0 0 0.9375rem 0;
