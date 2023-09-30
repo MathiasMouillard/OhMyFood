@@ -8,3 +8,18 @@
     }
 }
 
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
+  @keyframes colorChange {
+    0%, 100% {
+      color: $color-main;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+  }
