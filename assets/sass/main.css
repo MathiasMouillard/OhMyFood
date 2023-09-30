@@ -135,6 +135,11 @@ a {
   color: black;
   font-size: 1.5625rem;
 }
+@media screen and (min-width: 767px) {
+  .header {
+    padding: 1.375rem 0 1.40625rem 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header {
     padding: 1.875rem 0 2rem 0;
