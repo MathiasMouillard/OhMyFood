@@ -575,7 +575,6 @@ a {
   flex-direction: column;
   flex: 1;
   margin: 0 0 0 0.9375rem;
-  gap: 0.3125rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -586,6 +585,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-bottom: 0.3125rem;
 }
 .restaurant__item-info p {
   padding: 0 0 0.9375rem 0;
