@@ -1,7 +1,6 @@
 @keyframes appearFromBottom {
     0% { 
-        transform: scaleY(0);
-        
+        transform: scaleY(0);        
     }
     100% {
         transform: scaleY(1);       
@@ -11,15 +10,13 @@
 @keyframes loading {
     0% { width: 0; }
     100% { width: 100%; }
-  }
-  
-  @keyframes colorChange {
+  }  
+@keyframes colorChange {
     0%, 100% {
-      color: $color-main;
+    color: $color-main;
     }
-  }
-  
-  @keyframes fadeOut {
+  }  
+@keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; visibility: hidden; }
   }

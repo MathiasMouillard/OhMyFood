@@ -71,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-#loader {
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -85,29 +85,27 @@ a {
   animation: fadeOut 2s forwards;
   animation-delay: 2s;
 }
-
-#icon {
+.loader__icon {
   position: relative;
   font-size: 4.5em;
   animation: colorChange 1s infinite alternate;
   transform: rotate(-20deg);
   margin-top: -15vh;
 }
-
-.text-container {
+.loader__text-container {
   position: relative;
   font-family: "Shrikhand", sans-serif;
-  color: #9356DC;
-  text-shadow: 3px 3px #FF79DA;
+  color: #9356DC; /* Replace with your actual color variable */
+  text-shadow: 3px 3px #FF79DA; /* Replace with your actual color variable */
 }
-.text-container:after {
+.loader__text-container::after {
   content: "";
   position: absolute;
   bottom: 0.5rem;
   left: 0;
   height: 0.3rem;
   width: 0;
-  background: #99E2D0;
+  background: #99E2D0; /* Replace with your actual color variable */
   animation: loading 1s forwards;
   animation-delay: 1s;
 }
