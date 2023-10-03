@@ -192,9 +192,6 @@
         bottom: 3.4375rem;
         left: 86%;
         cursor: pointer;
-        &--heart {
-            @include heart-empty;
-        }
         &--new-icon {
             @include heart-filled;
         }

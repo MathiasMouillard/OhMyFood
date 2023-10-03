@@ -26,9 +26,6 @@
         @include btn-heart;
         position: relative;      
         cursor: pointer;
-        &--heart {
-            @include heart-empty;
-        }
         &--new-icon {
             @include heart-filled;
         }
