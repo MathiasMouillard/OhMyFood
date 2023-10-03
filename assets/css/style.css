@@ -450,14 +450,14 @@ a {
   left: 86%;
   cursor: pointer;
 }
-.restaurants-card__favorite-button--new-icon {
+.restaurants-card__favorite-button--heart-fill {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   transition: opacity 0.1s linear;
 }
-.restaurants-card__favorite-button--new-icon:hover {
+.restaurants-card__favorite-button--heart-fill:hover {
   opacity: 1;
   top: 0;
   animation: appearVertivalStretch 0.3s linear;
@@ -498,14 +498,14 @@ a {
   position: relative;
   cursor: pointer;
 }
-.restaurant__favorite-button--new-icon {
+.restaurant__favorite-button--heart-fill {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   transition: opacity 0.1s linear;
 }
-.restaurant__favorite-button--new-icon:hover {
+.restaurant__favorite-button--heart-fill:hover {
   opacity: 1;
   top: 0;
   animation: appearVertivalStretch 0.3s linear;
